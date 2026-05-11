@@ -230,6 +230,16 @@ defaults:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      giscus_comments: true
+  - scope:
+      path: ""
+      type: "news"
+    values:
+      giscus_comments: true
 
 sass:
   style: compressed
