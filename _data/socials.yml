@@ -1,9 +1,10 @@
 # Social media links and usernames.
 # See _templates/_data/socials.yml for the original demo for reference.
-# Uncomment and fill in the fields you want to use.
+# Uncomment and fill in additional fields as needed.
+
+github_username: sanghyeokk-lee
 
 # email: you@example.com
-# github_username:
 # linkedin_username:
 # scholar_userid:
 # orcid_id:
