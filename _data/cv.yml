@@ -2,11 +2,62 @@
 # See _templates/_data/cv.yml for the original demo for reference.
 
 cv:
-  name: ""
-  label: ""
-  email: ""
-  location: ""
+  name: Sanghyeok Lee (이상혁)
+  label: Undergraduate Researcher
+  email: sanghyeok.lee.32@gmail.com
+  location: Seoul, South Korea
   image: ""
-  summary: ""
+  summary: Undergraduate researcher interested in Reinforcement Learning and World Models.
 
-  sections: {}
+  social_networks:
+    - network: GitHub
+      username: sanghyeokk-lee
+
+  sections:
+    Education:
+      - institution: Seoul National University of Science and Technology (SeoulTech)
+        location: Seoul, South Korea
+        url: https://en.seoultech.ac.kr
+        area: Industrial and Information Systems Engineering
+        studyType: B.S. (Expected Feb 2027)
+        start_date: 2021-03
+        end_date: 2027-02
+        score: "Major GPA: 4.15 / 4.5 · Cumulative GPA: 4.10 / 4.5"
+        highlights:
+          - Research focus on Reinforcement Learning and World Models.
+
+    Experience:
+      - company: Applied Probability Laboratory (Problab), SeoulTech
+        position: Undergraduate Researcher
+        location: Seoul, South Korea
+        start_date: 2025-07
+        end_date: present
+        summary: Conducting research on Reinforcement Learning and World Models under the Applied Probability Lab.
+
+    Volunteer:
+      - company: Department of Industrial and Information Systems Engineering — Student Council
+        position: Council Member
+        location: SeoulTech, Seoul, South Korea
+        start_date: 2021-03
+        end_date: 2022-11
+
+    Certificates:
+      - name: ADsP — Advanced Data Analytics Semi-Professional (데이터분석 준전문가)
+        date: 2025-11
+        issuer: Korea Data Agency (한국데이터산업진흥원)
+        icon: fa-solid fa-chart-line
+      - name: SQLD — SQL Developer (SQL 개발자)
+        date: 2025-09
+        issuer: Korea Data Agency (한국데이터산업진흥원)
+        icon: fa-solid fa-database
+
+    Languages:
+      - name: Korean
+        summary: "Native"
+      - name: English
+        summary: "Intermediate"
+
+    Interests:
+      - name: Research
+        icon: fa-solid fa-tag
+        keywords: "Reinforcement Learning, World Models"
