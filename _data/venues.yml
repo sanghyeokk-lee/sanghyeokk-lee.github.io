@@ -1,9 +1,2 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
+# Publication venue metadata (journals, conferences) used by jekyll-scholar.
+# See _templates/_data/venues.yml for the original demo for reference.
