@@ -1,14 +1,15 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: Undergraduate, <a href='https://iise.seoultech.ac.kr/en' target='_blank'>Dept. of Industrial and Information Systems Engineering</a>, <a href='https://en.seoultech.ac.kr' target='_blank'>Seoul National University of Science and Technology (SeoulTech)</a>
+subtitle: Larva Time!!
 
 profile:
   align: right
-  image:
+  image: profile.png
   image_circular: false # crops the image to make it circular
-  more_info:
+  more_info: 
+    Project Hail Mary(2026)
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
