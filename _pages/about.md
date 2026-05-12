@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Larva Time!!
+subtitle: Lava Time!!
 
 profile:
   align: right
