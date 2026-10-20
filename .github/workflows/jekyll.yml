@@ -34,6 +34,7 @@ jobs:
         run: bundle exec jekyll build
         env:
           JEKYLL_ENV: production
+          LANG: C.UTF-8 # Tailwind plugin fails on Korean text without a UTF-8 locale
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

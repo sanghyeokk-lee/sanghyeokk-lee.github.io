@@ -1,6 +1,7 @@
 ---
 layout: cv
-title: CV - Keunhong Park
+title: CV
+permalink: /cv/
 ---
 
 <!-- Header -->
@@ -17,18 +18,22 @@ title: CV - Keunhong Park
         {% assign url_parts = site.url | split: "//" %}{{ url_parts[1] }}
       </a>
     </p>
+    {% if site.github_username != "" %}
     <p>
       <a href="https://github.com/{{ site.github_username }}" class="hover:text-text no-underline">
         {% include icons/github.html class="w-4 h-4 inline mr-1" %}
         {{ site.github_username }}
       </a>
     </p>
+    {% endif %}
+    {% if site.twitter_username != "" %}
     <p>
       <a href="https://twitter.com/{{ site.twitter_username }}" class="hover:text-text no-underline">
         {% include icons/twitter.html class="w-4 h-4 inline mr-1" %}
         {{ site.twitter_username }}
       </a>
     </p>
+    {% endif %}
     <p>
       <a href="mailto:{{ site.email }}" class="hover:text-text no-underline">
         {% include icons/envelope.html class="w-4 h-4 inline mr-1" %}
@@ -54,6 +59,7 @@ title: CV - Keunhong Park
   {% endfor %}
 </section>
 
+{% if site.data.employment.size > 0 %}
 <!-- Employment -->
 <section class="mt-8">
   <h2 class="font-display text-2xl font-semibold text-text mb-4">Employment</h2>
@@ -70,7 +76,9 @@ title: CV - Keunhong Park
   </div>
   {% endfor %}
 </section>
+{% endif %}
 
+{% if site.data.publications.size > 0 %}
 <!-- Publications -->
 <section class="mt-8">
   <h2 class="font-display text-2xl font-semibold text-text mb-4">Publications</h2>
@@ -101,3 +109,4 @@ title: CV - Keunhong Park
   </div>
   {% endfor %}
 </section>
+{% endif %}

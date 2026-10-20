@@ -1,15 +1,14 @@
 ---
 layout: default
-title: Keunhong Park
 ---
 
 <!-- Hero Section -->
 <section class="py-12 md:py-16 bg-surface">
   <div class="max-w-4xl mx-auto px-6">
     <div class="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-8">
-      <!-- Portrait -->
+      <!-- Portrait: images/portrait.jpg 로 사진을 넣고 아래 경로를 바꾸세요 -->
       <div class="flex-shrink-0">
-        <img src="{{ '/images/portrait.jpg' | relative_url }}"
+        <img src="{{ '/images/portrait.svg' | relative_url }}"
              alt="{{ site.name }}"
              class="w-48 h-48 md:w-56 md:h-56 object-cover">
       </div>
@@ -17,11 +16,13 @@ title: Keunhong Park
       <!-- Bio -->
       <div class="flex-1">
         <h1 class="font-display text-3xl md:text-4xl font-semibold text-text">
-          Hello, I'm {{ site.name }}
+          {{ site.name }}
         </h1>
+        {% if site.description != "" %}
         <div class="text-text-body mt-4 max-w-prose leading-relaxed prose">
           {{ site.description | markdownify }}
         </div>
+        {% endif %}
 
         <!-- Links -->
         <div class="flex flex-wrap justify-center md:justify-start gap-4 mt-6">
@@ -30,26 +31,33 @@ title: Keunhong Park
             CV
           </a>
 
+          {% if site.google_scholar != "" %}
           <a href="https://scholar.google.com/citations?user={{ site.google_scholar }}" class="inline-flex items-center text-text-muted hover:text-text font-sans text-sm no-underline">
             <i class="ai ai-google-scholar mr-1.5"></i>
             Scholar
           </a>
+          {% endif %}
 
+          {% if site.github_username != "" %}
           <a href="https://github.com/{{ site.github_username }}" class="inline-flex items-center text-text-muted hover:text-text font-sans text-sm no-underline">
             {% include icons/github.html class="w-4 h-4 mr-1.5" %}
             GitHub
           </a>
+          {% endif %}
 
+          {% if site.twitter_username != "" %}
           <a href="https://twitter.com/{{ site.twitter_username }}" class="inline-flex items-center text-text-muted hover:text-text font-sans text-sm no-underline">
             {% include icons/twitter.html class="w-4 h-4 mr-1.5" %}
             Twitter
           </a>
+          {% endif %}
         </div>
       </div>
     </div>
   </div>
 </section>
 
+{% if site.data.highlights.size > 0 %}
 <!-- Highlights Section -->
 <section class="relative py-12 md:py-16">
   <!-- Background with faded edges -->
@@ -63,7 +71,9 @@ title: Keunhong Park
     </div>
   </div>
 </section>
+{% endif %}
 
+{% if site.data.publications.size > 0 %}
 <!-- Publications Section -->
 <section class="py-12 md:py-16 bg-surface">
   <div class="max-w-4xl mx-auto px-6">
@@ -73,3 +83,4 @@ title: Keunhong Park
     {% endfor %}
   </div>
 </section>
+{% endif %}
