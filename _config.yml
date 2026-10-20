@@ -6,9 +6,21 @@ lang: ko
 title: Sanghyeok Lee            # 브라우저 탭에 표시될 사이트 제목
 name: Sanghyeok Lee             # 홈/CV에 표시될 이름
 position: Undergraduate Student @ Seoul National University of Science and Technology(SeoulTech), Industrial and Information Systems Engineering
+affiliation: "Undergraduate Student @ SeoulTech"   # 홈 화면 이름 아래 한 줄 (CV에는 위의 position이 표시됨)
 email: sanghyeok.lee.32@gmail.com
-# 홈 화면 자기소개 (Markdown 사용 가능, 예: [링크](https://example.com))
-description: ""
+# 한 줄 소개 — 검색 결과·링크 미리보기(meta description)와 RSS 피드 설명에 쓰입니다.
+description: "I am interested in world models that learn how the world works, and correct themselves when the world proves them wrong."
+# 홈 화면 자기소개 (Markdown 사용 가능, 예: [링크](https://example.com)). 문단 사이는 빈 줄로 구분합니다.
+bio: |
+  I am interested in world models that learn how the world works, and correct themselves when the world proves them wrong.
+
+  I keep coming back to one question: what is understanding, and how does it deepen?
+
+  I think of understanding as having layers: recognizing objects, grasping the relations between them, abstracting those relations into rules that still hold when the objects change, and building new concepts on top of those rules.
+
+  But none of these layers stays fixed once it is built. The move from atoms to quarks redefined the smallest units that make up the world; the move from classical to quantum mechanics rewrote its rules. Human understanding did not deepen by getting theories right from the start, but by revising wrong ones again and again.
+
+  That is why I am most interested in the ability to revise theories. I want to build machines that do not stop at learning how the world works, but notice when what they have learned no longer fits what they observe, tell whether the error lies in an assumption about the world or in the rule itself, and fix it on their own. The goal of my research is to keep sharpening this question.
 baseurl: ""                   # 사이트가 하위 경로에 있을 때만 사용 (예: /blog)
 url: "https://sanghyeokk-lee.github.io"
 

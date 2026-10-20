@@ -18,9 +18,12 @@ layout: default
         <h1 class="font-display text-3xl md:text-4xl font-semibold text-text">
           {{ site.name }}
         </h1>
-        {% if site.description != "" %}
-        <div class="text-text-body mt-4 max-w-prose leading-relaxed prose">
-          {{ site.description | markdownify }}
+        {% if site.affiliation and site.affiliation != "" %}
+        <p class="text-text-muted font-sans mt-2">{{ site.affiliation }}</p>
+        {% endif %}
+        {% if site.bio and site.bio != "" %}
+        <div class="text-text-body text-left mt-4 max-w-prose leading-relaxed prose">
+          {{ site.bio | markdownify }}
         </div>
         {% endif %}
 

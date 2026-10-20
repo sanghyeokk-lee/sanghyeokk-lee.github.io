@@ -23,22 +23,24 @@
   --color-link-underline: #d4d4d4;
 
   /* Fonts */
-  /* Korean glyphs fall back to Noto Serif/Sans KR */
-  --font-serif: 'Crimson Pro', 'Noto Serif KR', Georgia, Cambria, serif;
-  --font-display: 'Cormorant Garamond', 'Noto Serif KR', Georgia, serif;
-  --font-sans: 'Source Sans 3', 'Noto Sans KR', system-ui, sans-serif;
+  /* Noto everywhere: English in Noto Serif/Sans, Korean in Noto Serif/Sans KR */
+  --font-serif: 'Noto Serif', 'Noto Serif KR', Georgia, serif;
+  --font-display: 'Noto Serif', 'Noto Serif KR', Georgia, serif;
+  --font-sans: 'Noto Sans', 'Noto Sans KR', system-ui, sans-serif;
 }
 
 @layer base {
   html {
     font-family: var(--font-serif);
-    font-size: 16px; /* base size; all rem-based text and spacing scale with it (was 18px) */
+    font-size: 18px;
     line-height: 1.65;
   }
 
   body {
     background-color: var(--color-surface);
     color: var(--color-text);
+    /* Body text size; headings, menu and spacing still scale from the 18px root */
+    font-size: 16px;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -81,6 +83,11 @@
     --tw-prose-th-borders: var(--color-border);
     --tw-prose-td-borders: var(--color-border-subtle);
   }
+}
+
+/* Prose body text (home bio, blog posts) matches the 16px body size, including prose-lg */
+.prose {
+  font-size: 16px;
 }
 
 /* Prose link overrides - subtle grey underlines like rest of site */
