@@ -21,7 +21,10 @@ bio: |
   But none of these layers stays fixed once it is built. The move from atoms to quarks redefined the smallest units that make up the world; the move from classical to quantum mechanics rewrote its rules. Human understanding did not deepen by getting theories right from the start, but by revising wrong ones again and again.
 
   That is why I am most interested in the ability to revise theories. I want to build machines that do not stop at learning how the world works, but notice when what they have learned no longer fits what they observe, tell whether the error lies in an assumption about the world or in the rule itself, and fix it on their own. The goal of my research is to keep sharpening this question.
-baseurl: ""                   # 사이트가 하위 경로에 있을 때만 사용 (예: /blog)
+# 홈 프로필 사진 아래 인용구 (Crimson Pro 이탤릭). 비워 두면 숨겨집니다.
+quote: "Only compare yourself to younger you, never to others."
+quote_author: "Andrej Karpathy"   # 출처 (생략 가능)
+baseurl: ""                  # 사이트가 하위 경로에 있을 때만 사용 (예: /blog)
 url: "https://sanghyeokk-lee.github.io"
 
 # 소셜 링크 — 비워 두면 해당 링크가 숨겨집니다.

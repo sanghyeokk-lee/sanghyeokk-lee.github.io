@@ -11,6 +11,14 @@ layout: default
         <img src="{{ '/images/portrait.jpg' | relative_url }}"
              alt="{{ site.name }}"
              class="w-48 h-48 md:w-56 md:h-56 object-cover">
+        {% if site.quote and site.quote != "" %}
+        <figure class="mt-4 w-48 md:w-56 mx-auto text-center">
+          <blockquote class="font-quote italic text-base text-text-body leading-snug">&ldquo;{{ site.quote }}&rdquo;</blockquote>
+          {% if site.quote_author and site.quote_author != "" %}
+          <figcaption class="font-quote italic text-sm text-text-muted mt-1">&mdash; {{ site.quote_author }}</figcaption>
+          {% endif %}
+        </figure>
+        {% endif %}
       </div>
 
       <!-- Bio -->
