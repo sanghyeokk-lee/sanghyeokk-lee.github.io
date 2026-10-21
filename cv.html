@@ -171,3 +171,26 @@ permalink: /cv/
   {% endfor %}
 </section>
 {% endif %}
+
+{% if site.data.military.size > 0 %}
+<!-- Military Service -->
+<section class="mt-8">
+  <h2 class="font-display text-2xl font-semibold text-text mb-4">Military Service</h2>
+  {% for service in site.data.military %}
+  <div class="flex flex-col md:flex-row md:justify-between gap-1 mb-4">
+    <div class="flex-1">
+      <p>
+        <span class="font-semibold">{{ service.branch }}</span>{% if service.rank and service.rank != "" %}, <span class="text-text-body">{{ service.rank }}</span>{% endif %}
+        {% if service.status and service.status != "" %}<span class="text-text-muted">({{ service.status }})</span>{% endif %}
+      </p>
+      {% if service.description and service.description != "" %}
+      <p class="text-text-muted text-sm">{{ service.description }}</p>
+      {% endif %}
+    </div>
+    <div class="text-text-muted text-sm md:text-right flex-shrink-0">
+      {{ service.dates }}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+{% endif %}
