@@ -1,0 +1,17 @@
+# CV 연구 경험 (위에서부터 순서대로 표시). 비어 있으면 CV에서 섹션이 숨겨집니다.
+# 추가할 때는 [] 를 지우고 아래 형식으로 적어 주세요. url, advisor, description, location은 생략 가능.
+#
+# - lab: "Lab Name, SeoulTech"
+#   url: "https://example.com"                                  # 연구실 홈페이지 (lab 이름에 링크)
+#   role: "Undergraduate Research Intern"
+#   advisor: '<a href="https://example.com">Prof. Name</a>'     # "advised by ..." 로 표시
+#   description: "무엇을 했는지 한두 문장."
+#   dates: "Mar 2025 - (current)"
+#   location: "Seoul, Korea"
+- lab: "Applied Probability Lab (Prob Lab), SeoulTech"
+  url: "https://problab.seoultech.ac.kr/index.do"
+  role: "Undergraduate Research Intern"
+  advisor: '<a href="https://problab.seoultech.ac.kr/subList/20000007675">Prof. Min Kyu Sim</a>'
+  description: ""
+  dates: "July 2025 - (current)"
+  location: "Seoul, Korea"

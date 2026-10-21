@@ -13,8 +13,13 @@
           </a>
         </li>
         <li>
-          <a href="{{ '/blog/' | relative_url }}" class="text-text-muted no-underline hover:text-text {% if page.url contains '/blog' or page.layout == 'post' %}text-text font-bold{% endif %}">
+          <a href="{{ '/blog/' | relative_url }}" class="text-text-muted no-underline hover:text-text {% if page.url contains '/blog' %}text-text font-bold{% endif %}">
             Blog
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/building-blocks/' | relative_url }}" class="text-text-muted no-underline hover:text-text {% if page.url contains '/building-blocks' %}text-text font-bold{% endif %}">
+            Building Blocks
           </a>
         </li>
       </ul>

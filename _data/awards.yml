@@ -1,0 +1,11 @@
+# CV 수상/장학 (위에서부터 순서대로 표시). 비어 있으면 CV에서 섹션이 숨겨집니다.
+# 추가할 때는 [] 를 지우고 아래 형식으로 적어 주세요. organization, description은 생략 가능.
+#
+# - name: "Scholarship or Award Name"
+#   organization: "Foundation / Competition / University"
+#   description: "한 줄 설명 (예: Full tuition for two semesters)."
+#   date: "2025"
+- name: "Academic Excellence Scholarship"
+  organization: "SeoulTech"
+  description: "Merit-based scholarship, awarded for 5 semesters (Fall 2021, Fall 2022, Fall 2025, Spring 2026, Fall 2026)."
+  date: "2021 - 2026"

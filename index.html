@@ -6,9 +6,9 @@ layout: default
 <section class="py-12 md:py-16 bg-surface">
   <div class="max-w-4xl mx-auto px-6">
     <div class="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-8">
-      <!-- Portrait: images/portrait.jpg 로 사진을 넣고 아래 경로를 바꾸세요 -->
+      <!-- Portrait -->
       <div class="flex-shrink-0">
-        <img src="{{ '/images/portrait.svg' | relative_url }}"
+        <img src="{{ '/images/portrait.jpg' | relative_url }}"
              alt="{{ site.name }}"
              class="w-48 h-48 md:w-56 md:h-56 object-cover">
       </div>
@@ -49,9 +49,9 @@ layout: default
           {% endif %}
 
           {% if site.twitter_username != "" %}
-          <a href="https://twitter.com/{{ site.twitter_username }}" class="inline-flex items-center text-text-muted hover:text-text font-sans text-sm no-underline">
+          <a href="https://x.com/{{ site.twitter_username }}" class="inline-flex items-center text-text-muted hover:text-text font-sans text-sm no-underline">
             {% include icons/twitter.html class="w-4 h-4 mr-1.5" %}
-            Twitter
+            X
           </a>
           {% endif %}
         </div>

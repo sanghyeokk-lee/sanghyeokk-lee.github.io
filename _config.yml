@@ -5,7 +5,7 @@
 lang: ko
 title: Sanghyeok Lee            # 브라우저 탭에 표시될 사이트 제목
 name: Sanghyeok Lee             # 홈/CV에 표시될 이름
-position: Undergraduate Student @ Seoul National University of Science and Technology(SeoulTech), Industrial and Information Systems Engineering
+position: Undergraduate Student @ SeoulTech
 affiliation: "Undergraduate Student @ SeoulTech"   # 홈 화면 이름 아래 한 줄 (CV에는 위의 position이 표시됨)
 email: sanghyeok.lee.32@gmail.com
 # 한 줄 소개 — 검색 결과·링크 미리보기(meta description)와 RSS 피드 설명에 쓰입니다.
@@ -26,7 +26,7 @@ url: "https://sanghyeokk-lee.github.io"
 
 # 소셜 링크 — 비워 두면 해당 링크가 숨겨집니다.
 github_username: "sanghyeokk-lee"
-twitter_username: ""
+twitter_username: "sanghyeokk_lee"   # X(Twitter) 아이디, @ 없이
 google_scholar: ""              # Google Scholar 프로필 URL의 user= 값
 google_analytics: ""            # 예: G-XXXXXXXXXX
 
@@ -39,10 +39,22 @@ plugins:
 permalink: /blog/:year/:month/:day/:title/
 excerpt_separator: <!--more-->
 
+# Building Blocks: Blog와 별도로 관리하는 글 목록 (_building_blocks/ 폴더)
+collections:
+  building_blocks:
+    output: true
+    permalink: /building-blocks/:title/
+
 defaults:
   - scope:
       path: "_posts"
       type: "posts"
+    values:
+      layout: "post"
+      math: false
+  - scope:
+      path: "_building_blocks"
+      type: "building_blocks"
     values:
       layout: "post"
       math: false

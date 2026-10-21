@@ -9,6 +9,11 @@
         {% include icons/github.html class="w-6 h-6" %}
       </a>
       {% endif %}
+      {% if site.twitter_username != "" %}
+      <a href="https://x.com/{{ site.twitter_username }}" class="no-underline hover:text-text" aria-label="X">
+        {% include icons/twitter.html class="w-5 h-5 m-0.5" %}
+      </a>
+      {% endif %}
       {% if site.google_scholar != "" %}
       <a href="https://scholar.google.com/citations?user={{ site.google_scholar }}" class="no-underline hover:text-text" aria-label="Google Scholar">
         <i class="ai ai-google-scholar text-2xl"></i>

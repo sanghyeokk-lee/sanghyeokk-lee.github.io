@@ -28,9 +28,9 @@ permalink: /cv/
     {% endif %}
     {% if site.twitter_username != "" %}
     <p>
-      <a href="https://twitter.com/{{ site.twitter_username }}" class="hover:text-text no-underline">
+      <a href="https://x.com/{{ site.twitter_username }}" class="hover:text-text no-underline">
         {% include icons/twitter.html class="w-4 h-4 inline mr-1" %}
-        {{ site.twitter_username }}
+        @{{ site.twitter_username }}
       </a>
     </p>
     {% endif %}
@@ -58,6 +58,32 @@ permalink: /cv/
   </div>
   {% endfor %}
 </section>
+
+{% if site.data.research.size > 0 %}
+<!-- Research Experience -->
+<section class="mt-8">
+  <h2 class="font-display text-2xl font-semibold text-text mb-4">Research Experience</h2>
+  {% for item in site.data.research %}
+  <div class="flex flex-col md:flex-row md:justify-between gap-1 mb-4">
+    <div class="flex-1">
+      <p class="font-semibold">
+        {% if item.url %}<a href="{{ item.url }}" class="hover:text-text-body">{{ item.lab }}</a>{% else %}{{ item.lab }}{% endif %}
+      </p>
+      <p class="text-text-body text-sm">
+        {{ item.role }}{% if item.advisor %}, advised by {{ item.advisor }}{% endif %}
+      </p>
+      {% if item.description and item.description != "" %}
+      <p class="text-text-muted text-sm">{{ item.description }}</p>
+      {% endif %}
+    </div>
+    <div class="text-text-muted text-sm md:text-right flex-shrink-0">
+      {{ item.dates }}<br>
+      {{ item.location }}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+{% endif %}
 
 {% if site.data.employment.size > 0 %}
 <!-- Employment -->
@@ -107,6 +133,41 @@ permalink: /cv/
       {{ publication.venue }}
     </div>
   </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if site.data.awards.size > 0 %}
+<!-- Honors & Awards -->
+<section class="mt-8">
+  <h2 class="font-display text-2xl font-semibold text-text mb-4">Honors &amp; Awards</h2>
+  {% for award in site.data.awards %}
+  <div class="flex flex-col md:flex-row md:justify-between gap-1 mb-3">
+    <div class="flex-1">
+      <p>
+        <span class="font-semibold">{{ award.name }}</span>{% if award.organization %}, <span class="text-text-body">{{ award.organization }}</span>{% endif %}
+      </p>
+      {% if award.description and award.description != "" %}
+      <p class="text-text-muted text-sm">{{ award.description }}</p>
+      {% endif %}
+    </div>
+    <div class="text-text-muted text-sm md:text-right flex-shrink-0">
+      {{ award.date }}
+    </div>
+  </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+{% if site.data.skills.size > 0 %}
+<!-- Skills -->
+<section class="mt-8">
+  <h2 class="font-display text-2xl font-semibold text-text mb-4">Skills</h2>
+  {% for skill in site.data.skills %}
+  <p class="mb-1">
+    <span class="font-semibold">{{ skill.category }}:</span>
+    <span class="text-text-body">{{ skill.items }}</span>
+  </p>
   {% endfor %}
 </section>
 {% endif %}

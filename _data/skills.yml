@@ -1,0 +1,8 @@
+# CV 기술 (항목별 한 줄). 비어 있으면 CV에서 섹션이 숨겨집니다.
+# 추가할 때는 [] 를 지우고 아래 형식으로 적어 주세요.
+#
+# - category: "Languages"
+#   items: "Python, C++"
+# - category: "Frameworks"
+#   items: "PyTorch, JAX"
+[]
