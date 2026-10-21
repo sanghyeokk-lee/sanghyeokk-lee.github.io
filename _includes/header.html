@@ -1,7 +1,7 @@
 <header class="py-4 bg-surface">
   <div class="max-w-4xl mx-auto px-6">
     <nav class="flex items-center justify-center">
-      <ul class="flex items-center gap-6 text-sm font-sans">
+      <ul class="flex flex-wrap items-center justify-center gap-x-4 gap-y-1 sm:gap-x-6 text-sm font-sans">
         <li>
           <a href="{{ '/' | relative_url }}" class="text-text-muted no-underline hover:text-text {% if page.url == '/' %}text-text font-bold{% endif %}">
             Home
@@ -20,6 +20,11 @@
         <li>
           <a href="{{ '/building-blocks/' | relative_url }}" class="text-text-muted no-underline hover:text-text {% if page.url contains '/building-blocks' %}text-text font-bold{% endif %}">
             Building Blocks
+          </a>
+        </li>
+        <li>
+          <a href="{{ '/misc/' | relative_url }}" class="text-text-muted no-underline hover:text-text {% if page.url contains '/misc' %}text-text font-bold{% endif %}">
+            Misc
           </a>
         </li>
       </ul>

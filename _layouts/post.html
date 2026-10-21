@@ -27,6 +27,10 @@ layout: default
       <a href="{{ '/building-blocks/' | relative_url }}" class="inline-flex items-center text-link hover:text-link-hover transition-colors no-underline">
         ← Back to Building Blocks
       </a>
+      {% elsif page.collection == 'misc' %}
+      <a href="{{ '/misc/' | relative_url }}" class="inline-flex items-center text-link hover:text-link-hover transition-colors no-underline">
+        ← Back to Misc
+      </a>
       {% else %}
       <a href="{{ '/blog/' | relative_url }}" class="inline-flex items-center text-link hover:text-link-hover transition-colors no-underline">
         ← Back to blog
