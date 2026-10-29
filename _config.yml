@@ -43,12 +43,8 @@ permalink: /blog/:year/:month/:day/:title/
 excerpt_separator: <!--more-->
 
 # Blog와 별도로 관리하는 글 목록
-#   Building Blocks: _building_blocks/ 폴더
-#   Misc:            _misc/ 폴더
+#   Misc: _misc/ 폴더
 collections:
-  building_blocks:
-    output: true
-    permalink: /building-blocks/:title/
   misc:
     output: true
     permalink: /misc/:title/
@@ -57,12 +53,6 @@ defaults:
   - scope:
       path: "_posts"
       type: "posts"
-    values:
-      layout: "post"
-      math: false
-  - scope:
-      path: "_building_blocks"
-      type: "building_blocks"
     values:
       layout: "post"
       math: false
